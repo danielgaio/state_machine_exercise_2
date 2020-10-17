@@ -1,0 +1,8 @@
+
+State Machine - |SM1|fstate
+Name fstate.s3 fstate.s2 fstate.s1 fstate.s0 fstate.s4 
+fstate.s0 0 0 0 0 0 
+fstate.s1 0 0 1 1 0 
+fstate.s2 0 1 0 1 0 
+fstate.s3 1 0 0 1 0 
+fstate.s4 0 0 0 1 1 

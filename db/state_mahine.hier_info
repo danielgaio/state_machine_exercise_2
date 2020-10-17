@@ -1,0 +1,25 @@
+|SM1
+reset => reg_fstate.s0.OUTPUTSELECT
+reset => reg_fstate.s1.OUTPUTSELECT
+reset => reg_fstate.s2.OUTPUTSELECT
+reset => reg_fstate.s3.OUTPUTSELECT
+reset => reg_fstate.s4.OUTPUTSELECT
+reset => saida.OUTPUTSELECT
+reset => estado_atual$latch.LATCH_ENABLE
+clock => fstate~1.DATAIN
+entrada => Selector2.IN4
+entrada => Selector5.IN4
+entrada => Selector5.IN0
+entrada => Selector5.IN1
+entrada => Selector5.IN2
+entrada => Selector5.IN3
+entrada => Selector4.IN0
+entrada => Selector0.IN1
+entrada => Selector2.IN1
+entrada => Selector2.IN2
+entrada => Selector1.IN1
+entrada => Selector3.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+estado_atual <= estado_atual$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
