@@ -22,7 +22,7 @@
 
 module SM1 (
     input reset, input clock, input entrada,
-    output reg saida, output reg estado_atual);
+    output reg saida, output estado_atual);
 
     enum int unsigned { s0=0, s1=1, s2=2, s3=3, s4=4 } fstate, reg_fstate;
 
@@ -36,13 +36,13 @@ module SM1 (
         end
     end
 
-    always begin
+    always_comb begin
         if (reset) begin
             reg_fstate <= s0;
             saida <= 1'b0;
         end
         else begin
-            saida <= 1'b0;
+            //saida <= 1'b0;
             case (fstate)
                 s0: begin
                     estado_atual <= fstate;

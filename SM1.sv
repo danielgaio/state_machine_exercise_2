@@ -42,7 +42,7 @@ module SM1 (
             saida <= 1'b0;
         end
         else begin
-            saida <= 1'b0;
+            //saida <= 1'b0;
             case (fstate)
                 s0: begin
                     estado_atual <= fstate;

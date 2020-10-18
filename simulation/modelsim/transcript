@@ -3,206 +3,39 @@
 # 2 compiles, 0 failed with no errors.
 vsim work.state_machine_tb
 # vsim work.state_machine_tb 
-# Start time: 15:52:25 on Oct 17,2020
+# Start time: 16:03:44 on Oct 18,2020
 # Loading sv_std.std
 # Loading work.state_machine_tb
 # Loading work.SM1
-step
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'estado_atual'. The port definition is at: /home/daniel/Documents/GitHub/state_machine_exercise_2/SM1.sv(25).
+#    Time: 0 ns  Iteration: 0  Instance: /state_machine_tb/my_SM1_dut File: /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv Line: 16
+run -all
+# time:                    5
+# tempo atualizacao estado:                    5
+# time:                   10
+# time:                   15
+# tempo atualizacao estado:                   15
+# time:                   20
+# time:                   25
+# tempo atualizacao estado:                   25
+# time:                   30
+# time:                   35
+# tempo atualizacao estado:                   35
+# time:                   40
+# time:                   45
+# tempo atualizacao estado:                   45
+# ** Note: $stop    : /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv(58)
+#    Time: 50 ns  Iteration: 0  Instance: /state_machine_tb
+# Break in Module state_machine_tb at /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv line 58
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-add wave -position end  sim:/state_machine_tb/clock_tb
-add wave -position end  sim:/state_machine_tb/entrada_tb
-add wave -position end  sim:/state_machine_tb/estado_atual_tb
-add wave -position end  sim:/state_machine_tb/reset_tb
-add wave -position end  sim:/state_machine_tb/saida_tb
-run -all
-# Break key hit
-# Break in Module SM1 at /home/daniel/Documents/GitHub/state_machine_exercise_2/SM1.sv line 46
-# Compile of SM1.sv was successful.
-# Compile of state_machine_tb.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.state_machine_tb
-# End time: 15:58:52 on Oct 17,2020, Elapsed time: 0:06:27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'estado_atual'. The port definition is at: /home/daniel/Documents/GitHub/state_machine_exercise_2/SM1.sv(25).
+#    Time: 0 ns  Iteration: 0  Instance: /state_machine_tb/my_SM1_dut File: /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv Line: 16
+step
+step
+step
+step
+step
+step
+# End time: 16:10:15 on Oct 18,2020, Elapsed time: 0:06:31
 # Errors: 0, Warnings: 2
-# vsim work.state_machine_tb 
-# Start time: 15:58:52 on Oct 17,2020
-# Loading sv_std.std
-# Loading work.state_machine_tb
-# Loading work.SM1
-run -all
-# tempo atualizacao estado:                   10
-# -----------
-# tempo antes da primeira entrada:                   15
-# saida ok
-# 	 clock_tb, 	 reset_tb, 	 entrada_tb, 	 saida_tb 	 estado atual
-# 	 0, 		 0, 	 0, 		 0 		0
-# -----------
-# ** Note: $stop    : /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv(53)
-#    Time: 30 ns  Iteration: 0  Instance: /state_machine_tb
-# Break in Module state_machine_tb at /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv line 53
-restart
-add wave -position end  sim:/state_machine_tb/clock_tb
-add wave -position end  sim:/state_machine_tb/entrada_tb
-add wave -position end  sim:/state_machine_tb/estado_atual_tb
-add wave -position end  sim:/state_machine_tb/reset_tb
-add wave -position end  sim:/state_machine_tb/saida_tb
-run -all
-# tempo atualizacao estado:                   10
-# -----------
-# tempo antes da primeira entrada:                   15
-# saida ok
-# 	 clock_tb, 	 reset_tb, 	 entrada_tb, 	 saida_tb 	 estado atual
-# 	 0, 		 0, 	 0, 		 0 		0
-# -----------
-# ** Note: $stop    : /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv(53)
-#    Time: 30 ns  Iteration: 0  Instance: /state_machine_tb
-# Break in Module state_machine_tb at /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv line 53
-run -all
-# -----------
-# tempo antes da segunda entrada:                   30
-# tempo atualizacao estado:                   30
-# saida not ok
-# 	 clock_tb, 	 reset_tb, 	 entrada_tb, 	 saida_tb 	 estado atual
-# 	 0, 		 0, 	 1, 		 1 		0
-# -----------
-# ** Note: $stop    : /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv(65)
-#    Time: 45 ns  Iteration: 0  Instance: /state_machine_tb
-# Break in Module state_machine_tb at /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv line 65
-step
-step
-# Next activity is in 5 ns.
-step
-step
-step
-step
-step
-step
-# tempo atualizacao estado:                   50
-step
-step
-# Compile of SM1.sv was successful.
-# Compile of state_machine_tb.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.state_machine_tb
-# End time: 16:06:10 on Oct 17,2020, Elapsed time: 0:07:18
-# Errors: 0, Warnings: 2
-# vsim work.state_machine_tb 
-# Start time: 16:06:10 on Oct 17,2020
-# Loading sv_std.std
-# Loading work.state_machine_tb
-# Loading work.SM1
-run -all
-# tempo atualizacao estado:                   10
-# -----------
-# tempo antes da primeira entrada:                   15
-# saida ok
-# 	 clock_tb, 	 reset_tb, 	 entrada_tb, 	 saida_tb 	 estado atual
-# 	 0, 		 0, 	 0, 		 0 		0
-# -----------
-# ** Note: $stop    : /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv(53)
-#    Time: 30 ns  Iteration: 0  Instance: /state_machine_tb
-# Break in Module state_machine_tb at /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv line 53
-restart
-add wave -position end  sim:/state_machine_tb/clock_tb
-add wave -position end  sim:/state_machine_tb/entrada_tb
-add wave -position end  sim:/state_machine_tb/estado_atual_tb
-add wave -position end  sim:/state_machine_tb/reset_tb
-add wave -position end  sim:/state_machine_tb/saida_tb
-run -all
-# tempo atualizacao estado:                   10
-# -----------
-# tempo antes da primeira entrada:                   15
-# saida ok
-# 	 clock_tb, 	 reset_tb, 	 entrada_tb, 	 saida_tb 	 estado atual
-# 	 0, 		 0, 	 0, 		 0 		0
-# -----------
-# ** Note: $stop    : /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv(53)
-#    Time: 30 ns  Iteration: 0  Instance: /state_machine_tb
-# Break in Module state_machine_tb at /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv line 53
-run -all
-# -----------
-# tempo antes da segunda entrada:                   30
-# tempo atualizacao estado:                   30
-# saida not ok
-# 	 clock_tb, 	 reset_tb, 	 entrada_tb, 	 saida_tb 	 estado atual
-# 	 0, 		 0, 	 1, 		 1 		0
-# -----------
-# ** Note: $stop    : /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv(66)
-#    Time: 50 ns  Iteration: 0  Instance: /state_machine_tb
-# Break in Module state_machine_tb at /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv line 66
-# Compile of SM1.sv was successful.
-# Compile of state_machine_tb.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.state_machine_tb
-# End time: 16:07:41 on Oct 17,2020, Elapsed time: 0:01:31
-# Errors: 0, Warnings: 2
-# vsim work.state_machine_tb 
-# Start time: 16:07:41 on Oct 17,2020
-# Loading sv_std.std
-# Loading work.state_machine_tb
-# Loading work.SM1
-add wave -position end  sim:/state_machine_tb/clock_tb
-add wave -position end  sim:/state_machine_tb/entrada_tb
-add wave -position end  sim:/state_machine_tb/estado_atual_tb
-add wave -position end  sim:/state_machine_tb/reset_tb
-add wave -position end  sim:/state_machine_tb/saida_tb
-run -all
-# tempo atualizacao estado:                   10
-# -----------
-# tempo antes da primeira entrada:                   15
-# saida ok
-# 	 clock_tb, 	 reset_tb, 	 entrada_tb, 	 saida_tb 	 estado atual
-# 	 0, 		 0, 	 0, 		 0 		0
-# -----------
-# ** Note: $stop    : /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv(53)
-#    Time: 30 ns  Iteration: 0  Instance: /state_machine_tb
-# Break in Module state_machine_tb at /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv line 53
-run -all
-# -----------
-# tempo atualizacao estado:                   30
-# tempo antes da segunda entrada:                   35
-# saida not ok
-# 	 clock_tb, 	 reset_tb, 	 entrada_tb, 	 saida_tb 	 estado atual
-# 	 0, 		 0, 	 1, 		 1 		0
-# -----------
-# ** Note: $stop    : /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv(67)
-#    Time: 50 ns  Iteration: 0  Instance: /state_machine_tb
-# Break in Module state_machine_tb at /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv line 67
-# Compile of SM1.sv was successful.
-# Compile of state_machine_tb.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.state_machine_tb
-# End time: 16:09:12 on Oct 17,2020, Elapsed time: 0:01:31
-# Errors: 0, Warnings: 2
-# vsim work.state_machine_tb 
-# Start time: 16:09:12 on Oct 17,2020
-# Loading sv_std.std
-# Loading work.state_machine_tb
-# Loading work.SM1
-add wave -position end  sim:/state_machine_tb/clock_tb
-add wave -position end  sim:/state_machine_tb/entrada_tb
-add wave -position end  sim:/state_machine_tb/estado_atual_tb
-add wave -position end  sim:/state_machine_tb/reset_tb
-add wave -position end  sim:/state_machine_tb/saida_tb
-run -all
-# tempo atualizacao estado:                   10
-# -----------
-# tempo antes da primeira entrada:                   15
-# saida ok
-# 	 clock_tb, 	 reset_tb, 	 entrada_tb, 	 saida_tb 	 estado atual
-# 	 0, 		 0, 	 0, 		 0 		0
-# -----------
-# ** Note: $stop    : /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv(53)
-#    Time: 24 ns  Iteration: 0  Instance: /state_machine_tb
-# Break in Module state_machine_tb at /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv line 53
-run -all
-# -----------
-# tempo antes da segunda entrada:                   24
-# tempo atualizacao estado:                   30
-# saida not ok
-# 	 clock_tb, 	 reset_tb, 	 entrada_tb, 	 saida_tb 	 estado atual
-# 	 1, 		 0, 	 1, 		 0 		1
-# -----------
-# ** Note: $stop    : /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv(66)
-#    Time: 39 ns  Iteration: 0  Instance: /state_machine_tb
-# Break in Module state_machine_tb at /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv line 66
