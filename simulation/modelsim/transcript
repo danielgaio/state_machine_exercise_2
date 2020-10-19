@@ -1,14 +1,35 @@
 # Compile of SM1.sv was successful.
 # Compile of state_machine_tb.sv was successful.
 # 2 compiles, 0 failed with no errors.
+# Compile of SM1.sv was successful.
+# Compile of state_machine_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
 vsim work.state_machine_tb
 # vsim work.state_machine_tb 
-# Start time: 16:03:44 on Oct 18,2020
+# Start time: 08:18:54 on Oct 19,2020
 # Loading sv_std.std
 # Loading work.state_machine_tb
 # Loading work.SM1
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'estado_atual'. The port definition is at: /home/daniel/Documents/GitHub/state_machine_exercise_2/SM1.sv(25).
+# ** Error (suppressible): (vsim-3389) Port 'estado_atual' not found in the connected module (5th connection).
 #    Time: 0 ns  Iteration: 0  Instance: /state_machine_tb/my_SM1_dut File: /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv Line: 16
+# Error loading design
+# End time: 08:18:54 on Oct 19,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3
+# Compile of SM1.sv was successful.
+# Compile of state_machine_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.state_machine_tb
+# vsim work.state_machine_tb 
+# Start time: 08:19:50 on Oct 19,2020
+# Loading sv_std.std
+# Loading work.state_machine_tb
+# Loading work.SM1
+add wave -position end  sim:/state_machine_tb/my_SM1_dut/clock
+add wave -position end  sim:/state_machine_tb/my_SM1_dut/entrada
+add wave -position end  sim:/state_machine_tb/my_SM1_dut/fstate
+add wave -position end  sim:/state_machine_tb/my_SM1_dut/reg_fstate
+add wave -position end  sim:/state_machine_tb/my_SM1_dut/reset
+add wave -position end  sim:/state_machine_tb/my_SM1_dut/saida
 run -all
 # time:                    5
 # tempo atualizacao estado:                    5
@@ -24,18 +45,8 @@ run -all
 # time:                   40
 # time:                   45
 # tempo atualizacao estado:                   45
-# ** Note: $stop    : /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv(58)
+# ** Note: $stop    : /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv(56)
 #    Time: 50 ns  Iteration: 0  Instance: /state_machine_tb
-# Break in Module state_machine_tb at /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv line 58
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'estado_atual'. The port definition is at: /home/daniel/Documents/GitHub/state_machine_exercise_2/SM1.sv(25).
-#    Time: 0 ns  Iteration: 0  Instance: /state_machine_tb/my_SM1_dut File: /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv Line: 16
-step
-step
-step
-step
-step
-step
-# End time: 16:10:15 on Oct 18,2020, Elapsed time: 0:06:31
+# Break in Module state_machine_tb at /home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv line 56
+# End time: 08:31:40 on Oct 19,2020, Elapsed time: 0:11:50
 # Errors: 0, Warnings: 2

@@ -11,24 +11,24 @@ cModel Technology
 Z0 d/home/daniel/Documents/GitHub/state_machine_exercise_2/simulation/modelsim
 vSM1
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1603047813
+Z2 !s110 1603106384
 !i10b 1
-!s100 32Wd[fkJf><]Rzb?zeVF?2
+!s100 B0750>[D3_JfmMD3BWT1R1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I^7:dn[j]Cc<F7OQInVS]X3
+IWCCjNOG=0z[e@mF=PUan[3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1602984038
+w1603106321
 8/home/daniel/Documents/GitHub/state_machine_exercise_2/SM1.sv
 F/home/daniel/Documents/GitHub/state_machine_exercise_2/SM1.sv
-!i122 178
-L0 23 122
+!i122 184
+L0 23 121
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1603047813.000000
+Z6 !s108 1603106384.000000
 !s107 /home/daniel/Documents/GitHub/state_machine_exercise_2/SM1.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/daniel/Documents/GitHub/state_machine_exercise_2/SM1.sv|
 !i113 1
@@ -39,17 +39,17 @@ vstate_machine_tb
 R1
 R2
 !i10b 1
-!s100 9BIgC3NPaZNaCSQL[1Ame3
+!s100 kE5k>6EE1>Sg1LXDFF1[72
 R3
-Ia`m0Q1Ma@C2VSbhga4HLc2
+IX==leLE3E_RHkZIEQGfTk0
 R4
 S1
 R0
-w1602984108
+w1603106379
 8/home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv
 F/home/daniel/Documents/GitHub/state_machine_exercise_2/state_machine_tb.sv
-!i122 179
-L0 6 57
+!i122 185
+L0 6 55
 R5
 r1
 !s85 0

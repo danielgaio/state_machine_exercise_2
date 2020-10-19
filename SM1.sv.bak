@@ -22,7 +22,7 @@
 
 module SM1 (
     input reset, input clock, input entrada,
-    output reg saida, output estado_atual);
+    output reg saida, output reg estado_atual);
 
     enum int unsigned { s0=0, s1=1, s2=2, s3=3, s4=4 } fstate, reg_fstate;
 

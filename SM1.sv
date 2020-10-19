@@ -22,7 +22,7 @@
 
 module SM1 (
     input reset, input clock, input entrada,
-    output reg saida, output reg estado_atual);
+    output reg saida);
 
     enum int unsigned { s0=0, s1=1, s2=2, s3=3, s4=4 } fstate, reg_fstate;
 
@@ -31,7 +31,7 @@ module SM1 (
         if (clock) begin
             //$display("fstate: %d", fstate);
             //$display("reg_fstate: %d", reg_fstate);
-		$display("tempo atualizacao estado: %d", $time);
+	    $display("tempo atualizacao estado: %d", $time);
             fstate <= reg_fstate;
         end
     end
@@ -45,25 +45,27 @@ module SM1 (
             //saida <= 1'b0;
             case (fstate)
                 s0: begin
-                    estado_atual <= fstate;
-                    if (entrada)
+                    if (entrada) begin
                         reg_fstate <= s1;
-                    else if (~(entrada))
+			saida <= 1'b1;
+                    end else if (~(entrada)) begin
                         reg_fstate <= s0;
+			saida <= 1'b0;
                     // Inserting 'else' block to prevent latch inference
-                    else
+                    end else begin
                         reg_fstate <= s0;
+			saida <= 1'b0;
+		    end
 
-                    if (~(entrada))
-                        saida <= 1'b0;
-                    else if (entrada)
-                        saida <= 1'b1;
+                    //if (~(entrada))
+                        //saida <= 1'b0;
+                    //else if (entrada)
+                        //saida <= 1'b1;
                     // Inserting 'else' block to prevent latch inference
-                    else
-                        saida <= 1'b0;
+                    //else
+                        //saida <= 1'b0;
                 end
                 s1: begin
-                    estado_atual <= fstate;
                     if (~(entrada))
                         reg_fstate <= s2;
                     else if (entrada)
@@ -81,7 +83,6 @@ module SM1 (
                         saida <= 1'b0;
                 end
                 s2: begin
-                    estado_atual <= fstate;
                     if (~(entrada))
                         reg_fstate <= s4;
                     else if (entrada)
@@ -99,7 +100,6 @@ module SM1 (
                         saida <= 1'b0;
                 end
                 s3: begin
-                    estado_atual <= fstate;
                     if (~(entrada))
                         reg_fstate <= s2;
                     else if (entrada)
@@ -117,7 +117,6 @@ module SM1 (
                         saida <= 1'b0;
                 end
                 s4: begin
-                    estado_atual <= fstate;
                     if (~(entrada))
                         reg_fstate <= s0;
                     else if (entrada)

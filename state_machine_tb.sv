@@ -10,15 +10,13 @@ module state_machine_tb;
 
   // outputs of dut as wire
   wire saida_tb;
-  int unsigned estado_atual_tb;
 
   // Instanciando o módulo
   SM1 my_SM1_dut (
     .clock(clock_tb),
     .reset(reset_tb),
     .entrada(entrada_tb),
-    .saida(saida_tb),
-    .estado_atual(estado_atual_tb)
+    .saida(saida_tb)
   );
 
   // etapa de reset

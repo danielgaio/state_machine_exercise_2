@@ -11,13 +11,13 @@
 # 
 # vlog -sv -work work +incdir+/home/daniel/Documents/GitHub/state_machine_exercise_2 {/home/daniel/Documents/GitHub/state_machine_exercise_2/SM1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:03:17 on Oct 18,2020
+# Start time: 08:13:43 on Oct 19,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/daniel/Documents/GitHub/state_machine_exercise_2" /home/daniel/Documents/GitHub/state_machine_exercise_2/SM1.sv 
 # -- Compiling module SM1
 # 
 # Top level modules:
 # 	SM1
-# End time: 16:03:17 on Oct 18,2020, Elapsed time: 0:00:00
+# End time: 08:13:43 on Oct 19,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # 
