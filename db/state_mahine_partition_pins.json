@@ -8,10 +8,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "estado_atual",
-					"strict" : false
-				},
-				{
 					"name" : "reset",
 					"strict" : false
 				},

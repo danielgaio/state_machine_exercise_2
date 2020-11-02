@@ -355,7 +355,7 @@ GND                          : L13       : gnd    :                   :         
 VCC                          : L14       : power  :                   : 1.1V    :           :                
 GND                          : L15       : gnd    :                   :         :           :                
 VCC                          : L16       : power  :                   : 1.1V    :           :                
-saida                        : L17       : output : 2.5 V             :         : 5B        : N              
+entrada                      : L17       : input  : 2.5 V             :         : 5B        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : L18       :        :                   :         : 5B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L19       :        :                   :         : 5B        :                
 VREFB5BN0                    : L20       : power  :                   :         : 5B        :                
@@ -380,8 +380,8 @@ clock                        : M16       : input  : 2.5 V             :         
 VCCPD5B                      : M17       : power  :                   : 2.5V    : 5B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M18       :        :                   :         : 5B        :                
 VCCIO5B                      : M19       : power  :                   : 2.5V    : 5B        :                
-estado_atual                 : M20       : output : 2.5 V             :         : 5B        : N              
-entrada                      : M21       : input  : 2.5 V             :         : 5B        : N              
+saida                        : M20       : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M21       :        :                   :         : 5B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M22       :        :                   :         : 5B        :                
 GXB_NC                       : N1        :        :                   :         : B0L       :                
 GXB_NC                       : N2        :        :                   :         : B0L       :                
